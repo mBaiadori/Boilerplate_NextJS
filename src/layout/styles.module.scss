@@ -1,0 +1,105 @@
+.Layout {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-size: 2rem;
+  font-weight: 500;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  .Header {
+    width: 100%;
+    height: 48px;
+    background-color: cornflowerblue;
+    padding: 2px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media only screen and (max-width: 769px) {
+      padding: 2px 0px;
+    }
+
+    .Logo {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      margin: 0px 4px;
+      font-size: 1rem;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Menu {
+      width: 100%;
+      height: 96%;
+      padding-right: 4px;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .Button {
+        width: 80px;
+        height: 100%;
+        color: white;
+        cursor: pointer;
+        font-size: 1.3rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          border-bottom: 2px solid white;
+
+        }
+      }
+    }
+
+  }
+
+  .Page {
+    width: 100%;
+    height: 100%;
+    padding: 0px 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    @media only screen and (max-width: 769px) {
+      padding: 0px;
+    }
+
+  }
+
+  .Footer {
+    width: 100%;
+    height: 100px;
+    padding: 0px 20%;
+    background-color: grey;
+    color: white;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+    @media only screen and (max-width: 769px) {
+      padding-right: 8px;
+    }
+  }
+
+}
