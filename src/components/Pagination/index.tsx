@@ -35,7 +35,7 @@ const Pagination: React.FC = () => {
     })
   }
 
-  const totalDatas = datas.length
+  const totalDatas = datas.length - 1
   const totalPages = Math.floor(totalDatas / perPage)
 
   const onChangeOptionInput = (e: React.ChangeEvent<HTMLInputElement>) => {
